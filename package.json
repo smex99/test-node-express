@@ -1,0 +1,41 @@
+{
+  "name": "node-expess-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=prod node server/index.js",
+    "server-dev": "cross-env NODE_ENV=dev nodemon server/index.js",
+    "test": "cross-env NODE_ENV=test mocha --timeout 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.3",
+    "helmet": "^3.14.0",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-facebook-token": "^3.3.0",
+    "passport-google-plus-token": "^2.1.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "vue-simple-markdown": "^1.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^3.0.0",
+    "faker": "^4.1.0"
+  }
+}
